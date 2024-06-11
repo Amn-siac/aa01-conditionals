@@ -4,7 +4,20 @@
 return the original number.
 */
 
-// Your code here 
+function threeOrSeven(num) {
+    if (num === 0) {
+        return 0;
+    } else if (num % 21 === 0) {
+        return 21;
+    } else if (num % 7 === 0) {
+        return 7;
+    } else if (num % 3 === 0) {
+        return 3;
+    } else return num;
+
+
+
+}
 
 // console.log(threeOrSeven(3));   // => 3
 // console.log(threeOrSeven(15));  // => 3

@@ -5,7 +5,11 @@ should return true if both strings are found in the sentence, otherwise
 it should return false.
 */
 
-// Your code here 
+function bothStringsIncluded(strSen, str1, str2) {
+    if (strSen.includes(str1) && strSen.includes(str2)) {
+        return true;
+    } else return false;
+}
 
 // console.log(bothStringsIncluded("how now brown cow?", "panther", "cow"));  //=> false
 // console.log(bothStringsIncluded("Dance party!", "Dance", "party"));        //=> true
